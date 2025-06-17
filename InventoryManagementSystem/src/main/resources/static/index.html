@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <h1>📦 Inventory Dashboard</h1>
+        <p>Track, Add & Delete your stock easily with style!</p>
+      </header>
+
+      <section class="form-section">
+        <input type="text" id="itemName" placeholder="Item Name" />
+        <input type="number" id="itemQuantity" placeholder="Quantity" min="1" />
+        <button onclick="addItem()" class="btn add">➕ Add Item</button>
+      </section>
+
+      <section>
+        <h2>🗃️ Inventory Items</h2>
+        <ul id="inventoryList" class="card-list"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
